@@ -1,0 +1,74 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #ffffff;
+  }
+  #image-box {
+    width: 45%;
+  }
+  #image-box > img {
+    width: 100%;
+  }
+  #content-box {
+    width: 52%;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  #web-engage-logo {
+    width: 70%;
+  }
+  #web-engage-logo > img {
+    width: 100%;
+  }
+  #content-text {
+    text-align: center;
+  }
+  #content-text > h1 {
+    font-size: 45px;
+  }
+  #content-text > p {
+    font-size: 28px;
+  }
+  #survey-form {
+    width: 80%;
+  }
+  #survey-form > form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+  }
+  #survey-form > form > input {
+    padding: 18px 10px;
+    font-size: 18px;
+    font-weight: 100;
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 2px;
+  }
+  #survey-form > form > button {
+    padding: 18px 10px;
+    font-size: 18px;
+    font-weight: 100;
+    margin-top: 15px;
+    background-color: #000000;
+    text-transform: uppercase;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+  }
+  #survey-form > form > button:hover {
+    cursor: pointer;
+  }
