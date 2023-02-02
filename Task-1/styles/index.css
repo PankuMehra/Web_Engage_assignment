@@ -1,76 +1,139 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-  }
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: #ffffff;
+  min-height: 100vh;
+  height: 100%;
+}
+#image-box {
+  width: 45%;
+}
+#image-box > img {
+  width: 100%;
+}
+#content-box {
+  width: 52%;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#web-engage-logo {
+  width: 70%;
+}
+#web-engage-logo > img {
+  width: 100%;
+}
+#content-text {
+  text-align: center;
+}
+#content-text > h1 {
+  font-size: 45px;
+}
+#content-text > p {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+#survey-form {
+  width: 80%;
+  margin: auto;
+}
+#survey-form > form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+}
+#survey-form > form > input {
+  padding: 15px 10px;
+  font-size: 18px;
+  font-weight: 100;
+  border: 1px solid rgb(77, 77, 77);
+  border-radius: 2px;
+  outline: none;
+}
+#survey-form > form > button {
+  padding: 15px 10px;
+  font-size: 18px;
+  font-weight: 100;
+  margin-top: 15px;
+  background-color: #000000;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+#survey-form > form > button:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 680px) and (max-width: 960px) {
   main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-    background-color: #ffffff;
-  }
-  #image-box {
-    width: 45%;
-  }
-  #image-box > img {
-    width: 100%;
-  }
-  #content-box {
-    width: 52%;
-    display: flex;
-    gap: 15px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  #web-engage-logo {
-    width: 70%;
-  }
-  #web-engage-logo > img {
-    width: 100%;
-  }
-  #content-text {
-    text-align: center;
-  }
-  #content-text > h1 {
-    font-size: 45px;
-  }
-  #content-text > p {
-    font-size: 28px;
-    margin-bottom: 15px;
-  }
-  #survey-form {
-    width: 80%;
-    margin: auto;
+    padding: 25px;
   }
   #survey-form > form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 15px;
+    gap: 12px;
   }
   #survey-form > form > input {
-    padding: 15px 10px;
-    font-size: 18px;
-    font-weight: 100;
-    border: 1px solid rgb(77, 77, 77);
-    border-radius: 2px;
+    padding: 10px 8px;
+    font-size: 12px;
   }
   #survey-form > form > button {
-    padding: 15px 10px;
-    font-size: 18px;
-    font-weight: 100;
-    margin-top: 15px;
-    background-color: #000000;
-    text-transform: uppercase;
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
+    padding: 10px 8px;
+    margin-top: 10px;
+    font-size: 12px;
   }
-  #survey-form > form > button:hover {
-    cursor: pointer;
+  #content-text > h1 {
+    font-size: 35px;
   }
+  #content-text > p {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 680px) {
+  main {
+    padding: 15px;
+    flex-direction: column;
+  }
+  #web-engage-logo {
+    width: 60%;
+  }
+  #image-box {
+    width: 80%;
+  }
+  #content-box {
+    width: 90%;
+    gap: 8px;
+  }
+  #survey-form > form {
+    gap: 8px;
+  }
+  #survey-form > form > input {
+    padding: 10px 8px;
+    font-size: 15px;
+  }
+  #survey-form > form > button {
+    padding: 10px 8px;
+    margin-top: 5px;
+    /* font-size: 10px; */
+  }
+  #content-text > h1 {
+    font-size: 26px;
+  }
+  #content-text > p {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+}

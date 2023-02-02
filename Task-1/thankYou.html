@@ -1,16 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thanks You</title>
-</head>
-<body>
+    <link rel="stylesheet" href="./styles/thankYou.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <main>
-        <div>
-            <img src="./images/ThankYou_Envelope.gif" alt="">
+      <div id="gifImage">
+        <img src="./images/ThankYou_Envelope.gif" alt="" />
+      </div>
+      <div id="content">
+        <h2>
+          Thanks a ton for taking out your precious time and for completing the
+          <span id="survey">survey</span>
+        </h2>
+        <div id="dynamic-content">
+          <h3>Email Address: <span id="email"></span></h3>
+          <h3>
+            Contact Number<span id="country-code"></span> -
+            <span id="number"></span>
+          </h3>
         </div>
+      </div>
     </main>
-</body>
+  </body>
+  <script src="./scripts/thankYou.js"></script>
 </html>
