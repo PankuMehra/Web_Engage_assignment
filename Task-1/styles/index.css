@@ -39,9 +39,11 @@
   }
   #content-text > p {
     font-size: 28px;
+    margin-bottom: 15px;
   }
   #survey-form {
     width: 80%;
+    margin: auto;
   }
   #survey-form > form {
     display: flex;
@@ -50,14 +52,14 @@
     gap: 15px;
   }
   #survey-form > form > input {
-    padding: 18px 10px;
+    padding: 15px 10px;
     font-size: 18px;
     font-weight: 100;
     border: 1px solid rgb(77, 77, 77);
     border-radius: 2px;
   }
   #survey-form > form > button {
-    padding: 18px 10px;
+    padding: 15px 10px;
     font-size: 18px;
     font-weight: 100;
     margin-top: 15px;

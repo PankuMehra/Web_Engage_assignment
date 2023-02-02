@@ -44,7 +44,6 @@ const fetchData = async () => {
 
   let res = await fetch("https://jsonplaceholder.typicode.com/users");
   let fetchedData = await res.json();
-  console.log("fetchedData:", fetchedData[0]);
   let data = {
     data: fetchedData,
   };

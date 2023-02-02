@@ -13,7 +13,10 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,200"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/index.css" />
   </head>
   <body>
@@ -30,14 +33,13 @@
           <p>consultation with an expert</p>
         </div>
         <div id="survey-form">
-          <form action="" onsubmit="">
+          <form action="" onsubmit="setUserData()">
             <input
               type="email"
               name=""
               id="email"
               placeholder="Enter your email"
               required
-              oninput="getInput()"
             />
             <input
               type="number"
@@ -45,7 +47,6 @@
               id="number"
               placeholder="Enter your mobile"
               required
-              oninput="getInput()"
             />
             <button>
               Talk to us
