@@ -10,12 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
     <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,200"
-    />
-    <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
     />
     <link rel="stylesheet" href="./styles/index.css" />
   </head>
@@ -34,20 +34,26 @@
         </div>
         <div id="survey-form">
           <form action="" onsubmit="setUserData(event)">
-            <input
-              type="email"
-              name=""
-              id="email"
-              placeholder="Enter your email"
-              required
-            />
-            <input
-              type="number"
-              name=""
-              id="number"
-              placeholder="Enter your mobile"
-              required
-            />
+            <div id="email-box">
+              <input
+                type="text"
+                name=""
+                id="email"
+                placeholder="Enter your email"
+                oninput="validateEmail()"
+                />
+                <span id="emailError"></span>
+            </div>
+            <div id="number-box">
+              <input
+                type="number"
+                name=""
+                id="number"
+                placeholder="Enter your mobile"
+                oninput="validateNumber()"
+              />
+              <span id="numberError"></span>
+            </div>
             <button>
               Talk to us
               <span class="material-symbols-rounded"> trending_flat </span>
@@ -57,5 +63,6 @@
       </div>
     </main>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
   <script src="./scripts/index.js"></script>
 </html>

@@ -53,15 +53,21 @@ main {
   width: 100%;
   gap: 15px;
 }
-#survey-form > form > input {
+input {
   padding: 15px 10px;
   font-size: 18px;
   font-weight: 100;
   border: 1px solid rgb(77, 77, 77);
   border-radius: 2px;
+  width: 100%;
   outline: none;
 }
-#survey-form > form > button {
+#number-box, #email-box{
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+}
+form > button {
   padding: 15px 10px;
   font-size: 18px;
   font-weight: 100;
@@ -74,8 +80,12 @@ main {
   justify-content: center;
   border: none;
 }
-#survey-form > form > button:hover {
+form > button:hover {
   cursor: pointer;
+}
+#numberError, #emailError {
+  
+  color: rgb(172, 15, 15);
 }
 
 @media screen and (min-width: 680px) and (max-width: 960px) {
@@ -85,7 +95,7 @@ main {
   #survey-form > form {
     gap: 12px;
   }
-  #survey-form > form > input {
+  input {
     padding: 10px 8px;
     font-size: 12px;
   }
@@ -120,7 +130,11 @@ main {
   #survey-form > form {
     gap: 8px;
   }
-  #survey-form > form > input {
+  #number-box {
+    display: flex;
+    flex-direction: column;
+  }
+  input {
     padding: 10px 8px;
     font-size: 15px;
   }
