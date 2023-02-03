@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nunjucks</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Nunjucks queries to create dynamic HTML template</h1>
+        <h2>
+          Data is fetched from
+          <a href="https://jsonplaceholder.typicode.com/users" target="_blank" >here</a>
+        </h2>
+      </header>
+      <div id="nunjucks">
+        <h3>Q1. If Id is even print its respective name, username, email else print "I'm Odd"</h3>
+          <ul>
+              
+                  
+                      <li>I'm Odd</li>
+                  
+              
+                  
+                      <li>Name: Ervin Howell, Username: Antonette, Email: Shanna@melissa.tv</li>
+                  
+              
+                  
+                      <li>I'm Odd</li>
+                  
+              
+                  
+                      <li>Name: Patricia Lebsack, Username: Karianne, Email: Julianne.OConner@kory.org</li>
+                  
+              
+                  
+                      <li>I'm Odd</li>
+                  
+              
+                  
+                      <li>Name: Mrs. Dennis Schulist, Username: Leopoldo_Corkery, Email: Karley_Dach@jasper.info</li>
+                  
+              
+                  
+                      <li>I'm Odd</li>
+                  
+              
+                  
+                      <li>Name: Nicholas Runolfsdottir V, Username: Maxime_Nienow, Email: Sherwood@rosamond.me</li>
+                  
+              
+                  
+                      <li>I'm Odd</li>
+                  
+              
+                  
+                      <li>Name: Clementina DuBuque, Username: Moriah.Stanton, Email: Rey.Padberg@karina.biz</li>
+                  
+              
+          </ul>
+        <h3>Q2. From the shared sapmle data of array JSON, based on all id values get its respecive address keys and values and print them.</h3>
+          <ul>
+              
+                  <li>City: Gwenborough, Geolocation: Latitude: -37.3159, Longitude: 81.1496, Street: Kulas Light, Suite: Apt. 556, Zipcode: 92998-3874</li>
+              
+                  <li>City: Wisokyburgh, Geolocation: Latitude: -43.9509, Longitude: -34.4618, Street: Victor Plains, Suite: Suite 879, Zipcode: 90566-7771</li>
+              
+                  <li>City: McKenziehaven, Geolocation: Latitude: -68.6102, Longitude: -47.0653, Street: Douglas Extension, Suite: Suite 847, Zipcode: 59590-4157</li>
+              
+                  <li>City: South Elvis, Geolocation: Latitude: 29.4572, Longitude: -164.2990, Street: Hoeger Mall, Suite: Apt. 692, Zipcode: 53919-4257</li>
+              
+                  <li>City: Roscoeview, Geolocation: Latitude: -31.8129, Longitude: 62.5342, Street: Skiles Walks, Suite: Suite 351, Zipcode: 33263</li>
+              
+                  <li>City: South Christy, Geolocation: Latitude: -71.4197, Longitude: 71.7478, Street: Norberto Crossing, Suite: Apt. 950, Zipcode: 23505-1337</li>
+              
+                  <li>City: Howemouth, Geolocation: Latitude: 24.8918, Longitude: 21.8984, Street: Rex Trail, Suite: Suite 280, Zipcode: 58804-1099</li>
+              
+                  <li>City: Aliyaview, Geolocation: Latitude: -14.3990, Longitude: -120.7677, Street: Ellsworth Summit, Suite: Suite 729, Zipcode: 45169</li>
+              
+                  <li>City: Bartholomebury, Geolocation: Latitude: 24.6463, Longitude: -168.8889, Street: Dayna Park, Suite: Suite 449, Zipcode: 76495-3109</li>
+              
+                  <li>City: Lebsackbury, Geolocation: Latitude: -38.2386, Longitude: 57.2232, Street: Kattie Turnpike, Suite: Suite 198, Zipcode: 31428-2261</li>
+              
+          </ul>
+        <h3>Q3. If any email ends with .biz print its name with email values.</h3>
+          <ul>
+            
+                
+                  <li>Name: Leanne Graham, Email: Sincere@april.biz</li> 
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  <li>Name: Kurtis Weissnat, Email: Telly.Hoeger@billy.biz</li> 
+                
+            
+                
+            
+                
+            
+                
+                  <li>Name: Clementina DuBuque, Email: Rey.Padberg@karina.biz</li> 
+                
+            
+          </ul>
+        <h3>Q4. If city contains any of following "Aliyaview", "Howemouth", Gwenborough print its respective cityname, zipcode, Geo with lat and lang values.</h3>
+          <ul>
+              
+                  
+                      <li>The Zipcode and Geo of cityname Gwenborough is: 92998-3874 and -37.3159, 81.1496</li>
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+                      <li>The Zipcode and Geo of cityname Howemouth is: 58804-1099 and 24.8918, 21.8984</li>
+                  
+              
+                  
+                      <li>The Zipcode and Geo of cityname Aliyaview is: 45169 and -14.3990, -120.7677</li>
+                  
+              
+                  
+              
+                  
+              
+          </ul>
+        <h3>Q5. Print CatchPhrase which will contain max 15 letters.</h3>
+          <ul>
+              
+                    <li>CatchPhrase: Multi-layered c</li>
+              
+                    <li>CatchPhrase: Proactive didac</li>
+              
+                    <li>CatchPhrase: Face to face bi</li>
+              
+                    <li>CatchPhrase: Multi-tiered ze</li>
+              
+                    <li>CatchPhrase: User-centric fa</li>
+              
+                    <li>CatchPhrase: Synchronised bo</li>
+              
+                    <li>CatchPhrase: Configurable mu</li>
+              
+                    <li>CatchPhrase: Implemented sec</li>
+              
+                    <li>CatchPhrase: Switchable cont</li>
+              
+                    <li>CatchPhrase: Centralized emp</li>
+              
+          </ul>
+      </div>
+    </main>
+  </body>
+</html>

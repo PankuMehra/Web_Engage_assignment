@@ -35,9 +35,7 @@ const fetchData = async () => {
   <h3>Q5. Print CatchPhrase which will contain max 15 letters.</h3>
     <ul>
         {% for user in data %}
-            {% if user.company.catchPhrase | length > 15 %}
-                <li>CatchPhrase: {{user.company.catchPhrase}}</li>
-            {% endif %}
+          <li>CatchPhrase: {{user.company.catchPhrase | truncate(15, true, "")}}</li>
         {% endfor %}
     </ul>
   `;

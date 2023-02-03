@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nunjucks</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Nunjucks queries to create dynamic HTML template</h1>
+        <h2>
+          Data is fetched from
+          <a href="https://jsonplaceholder.typicode.com/users" target="_blank" >here</a>
+        </h2>
+      </header>
+      <div id="nunjucks">
+        <h3>Q1. If Id is even print its respective name, username, email else print "I'm Odd"</h3>
+          <ul>
+              {% for user in data %}
+                  {% if user.id is even %}
+                      <li>Name: {{ user.name}}, Username: {{user.username}}, Email: {{user.email}}</li>
+                  {% else %}
+                      <li>I'm Odd</li>
+                  {% endif %}
+              {% endfor %}
+          </ul>
+        <h3>Q2. From the shared sapmle data of array JSON, based on all id values get its respecive address keys and values and print them.</h3>
+          <ul>
+              {% for user in data %}
+                  <li>City: {{ user.address.city}}, Geolocation: Latitude: {{user.address.geo.lat}}, Longitude: {{user.address.geo.lng}}, Street: {{user.address.street}}, Suite: {{user.address.suite}}, Zipcode: {{user.address.zipcode}}</li>
+              {% endfor %}
+          </ul>
+        <h3>Q3. If any email ends with .biz print its name with email values.</h3>
+          <ul>
+            {% for user in data %}
+                {% if user.email.endsWith(".biz") %}
+                  <li>Name: {{user.name}}, Email: {{user.email}}</li> 
+                {% endif %}
+            {% endfor %}
+          </ul>
+        <h3>Q4. If city contains any of following "Aliyaview", "Howemouth", Gwenborough print its respective cityname, zipcode, Geo with lat and lang values.</h3>
+          <ul>
+              {% for user in data %}
+                  {% if user.address.city === "Aliyaview" or user.address.city === "Howemouth" or user.address.city === "Gwenborough" %}
+                      <li>The Zipcode and Geo of cityname {{ user.address.city}} is: {{user.address.zipcode}} and {{user.address.geo.lat}}, {{user.address.geo.lng}}</li>
+                  {% endif %}
+              {% endfor %}
+          </ul>
+        <h3>Q5. Print CatchPhrase which will contain max 15 letters.</h3>
+          <ul>
+              {% for user in data %}
+                    <li>CatchPhrase: {{user.company.catchPhrase | truncate(15, true, "")}}</li>
+              {% endfor %}
+          </ul>
+      </div>
+    </main>
+  </body>
+</html>
