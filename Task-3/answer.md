@@ -33,14 +33,14 @@
 => To Customer,
      Subject- Informing regarding project delay
      Dear Sir/Ma'am,
-     I'm sorry to inform you that I will not able to deliver the given task on time initially finalised and have adjusted the timeline according to the new scenario.
-     Due to a family emergency, the task 2 has been delayed by three days. Our new estimated deadline is feb 05,2023. 
-     I am confident that after the issue has been solved I will be able to complete the project quickly and efficiently.
+     I hope you are well and good. I regret to inform you that I am unable to complete the given task on time which was expected to be submit today itself.
+
+     Actually today I had a family emergency due to which some aspects of the task are still pending. So, I need 3 more days to accomplish the task and the expected date to submit the task will be at 06-02-2023 and I ensure you these type of inconviences will not happen again in the future tasks.
      
      I appreciate your flexibility and understanding as we tackle this unforeseen issue.
 
      Thank you. Please contact me if you have any questions about the delay, the new schedule or anything else.
-                      
+     
     Regards,
     Pankaj Mehra
 
